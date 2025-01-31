@@ -1,0 +1,10 @@
+ip access-list customer_name_acl_in
+ seq 10 permit ip any 10.4.2.0/24
+ seq 15 permit ip any 10.4.3.0/24
+ seq 20 permit ip any 10.0.69.0/24
+ seq 30 permit ip any 172.16.46.0/24
+ seq 40 permit ip any 172.16.47.0/24
+ seq 996 deny ip any 10.0.0.0/8
+ seq 997 deny ip any 172.16.0.0/12
+ seq 998 deny ip any 192.168.0.0/16
+ seq 999 permit ip any any
